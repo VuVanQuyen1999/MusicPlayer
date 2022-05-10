@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./assets/main.css">
+    <script src="https://kit.fontawesome.com/3e1c3299ac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="app">
+        <div class="dashboard">
+            <!-- header -->
+            <div class="header">
+                <i class="fa-solid fa-angle-down"></i>
+                <div class="description">
+                    <h4>
+                        Now playing
+                    </h4>
+                    <p>
+                        String 57th & 9th
+                    </p>
+                </div>
+                <i class="fa-solid fa-plus"></i>  
+            </div>
+
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-thumb"
+                    style="background-image: url('https://i1.sndcdn.com/artworks-1bz9YR13BoZDyFtr-Zg09nw-t500x500.jpg');">
+                </div>
+            </div>
+
+            <!-- control -->
+            <div class="control">
+                <div class="control-btn">
+                    <div class="btn btn-repeat">
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                    </div>
+                    <div class="btn btn-prev">
+                        <i class="fa-solid fa-backward-step"></i>
+                    </div>
+                    <div class="btn btn-toggle-play">
+                        <i class="fa-solid fa-circle-play icon-play"></i>
+                        <i class="fa-solid fa-circle-pause icon-stop"></i>
+                    </div>
+                    <div class="btn btn-next">
+                        <i class="fa-solid fa-forward-step"></i>
+                    </div>
+                    <div class="btn btn-random">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </div>
+                </div>
+
+                <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100"> 
+                <audio id="audio" src=""></audio>
+            </div>
+        </div>
+
+        <!-- Playlist -->
+        <div class="play-list">
+            
+            
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-music"></i>
+            <i class="fa-solid fa-circle-play"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
